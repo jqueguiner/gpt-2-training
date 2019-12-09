@@ -22,7 +22,7 @@ Since the original vocab.bpe does not include Cyrillic alphabet (...), I've empl
 Quick start guide:
 
 1. clone [nshepperd repo](https://github.com/nshepperd/gpt-2)
-2. comment out the line "if layer == 10:" in model.py for checkpointing to work properly (save memory)
+2. comment out the line "if layer == 10:" in [model.py](https://github.com/nshepperd/gpt-2/blob/finetuning/src/model.py#L165) for checkpointing to work properly (save memory)
 3. install [Google SentencePiece](https://github.com/google/sentencepiece)
 4. use src/encoder_sp.py from this repo, copy it to src/ dir
 5. replace all relevant "import encoder" with "import encoder_sp as encoder" in relevant files (encode.py and sampling scripts)
